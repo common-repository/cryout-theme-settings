@@ -1,0 +1,153 @@
+/* About page styling */
+
+div.notice p {
+	font-size: 1.2em;
+}
+
+#post-body-content ul {
+    display: inline-block;
+    margin-bottom: 2em;
+}
+
+#post-body-content ul li {
+    display: inline-block;
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+
+#post-body-content ul li img {
+    width: 90%;
+}
+
+#post-body-content ul li span {
+    font-weight: bold;
+}
+
+#post-body-content ul li img {
+    border: 3px solid #DDD;
+    padding: 3px;
+    width: 90%;
+    -webkit-transition: .2s ease-out all;
+    transition: .2s ease-out all;
+}
+
+#post-body-content ul li:hover img {
+    background-color: #DDD;
+}
+
+/* Theme page styling */
+
+.priority-support.postbox .inside {
+	margin: 0;
+	padding: 5px 0 0 0;
+}
+
+#slider {
+	position: relative;
+	overflow: hidden;
+	margin: 5px auto 0;
+}
+
+#slider ul {
+	position: relative;
+	margin: 0;
+	padding: 0;
+	height: 375px;
+	list-style: none;
+	overflow: hidden;
+}
+
+#slider ul li {
+	position: relative;
+	display: block;
+	float: left;
+	margin: 0;
+	padding: 0;
+	width: 500px;
+	height: 375px;
+	background: #ccc;
+	text-align: center;
+}
+
+#slider a span {
+	display: inline-block;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	opacity: 0;
+	background: rgba(0,0,0,.5);
+	max-width: 200px;
+	height: 40px;
+	line-height: 40px;
+	font-size: 1.2em;
+	color: #FFF;
+	-webkit-transition: .3s ease-out all;
+	transition: .3s ease-out all;
+}
+
+#slider:hover a span {
+	opacity: 1;
+}
+
+#righty #slider .item-title {
+	color: #fff;
+}
+
+a.control_prev,
+a.control_next {
+	position: absolute;
+	top: 50%;
+	-webkit-transform:translateY(-50%);
+	transform:translateY(-50%);
+	z-index: 3; /* higher value overlap the tooltips */
+	display: block;
+	padding: 3% 3% 4%;
+	width: auto;
+	height: auto;
+	background: #2a2a2a;
+	color: #fff;
+	text-decoration: none;
+	font-weight: 600;
+	font-size: 18px;
+	opacity: 0.3;
+	cursor: pointer;
+}
+
+a.control_prev:hover,
+a.control_next:hover {
+	opacity: .8;
+	-webkit-transition: all 0.2s ease;
+	transition: all 0.2s ease;
+}
+
+a.control_prev {
+	border-radius: 0 2px 2px 0;
+}
+
+a.control_next {
+	right: 0;
+	border-radius: 2px 0 0 2px;
+}
+
+.no-js #slider img {
+	width: 100%;
+}
+
+.no-js #slider ul li {
+	width: 50%;
+	height: 50%;
+}
+
+.no-js .control_next,
+.no-js .control_prev {
+	display: none;
+}
+
+.no-js #slider ul li:hover a span {
+	background: rgba(0,0,0,.8);
+}
+
+/* FIN */
